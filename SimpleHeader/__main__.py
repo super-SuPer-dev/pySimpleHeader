@@ -1,5 +1,5 @@
 from argparse import Namespace, ArgumentParser
-from .create_header2 import create_header
+from .create_header import create_header
 
 parser = ArgumentParser(description='Create a header with specified text, border width, and border type.')
 parser.add_argument('-t', '--text', type=str, help='The text to include in the header.', default="Example text")
