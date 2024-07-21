@@ -71,7 +71,7 @@ pip install https://github.com/super-SuPer-dev/pySimpleHeader.git
 If you want you can clone it using this.
 ```bash
 git clone https://github.com/super-SuPer-dev/pySimpleHeader.git
-cd New_setup
+cd pySimpleHeader
 ```
 
 ## LICENSE
