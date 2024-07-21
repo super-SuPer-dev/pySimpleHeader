@@ -37,7 +37,7 @@ python -m simpleheader [-h] [-t TEXT] [-b BWIDTH] [-bt BTYPE] [-s SPACE]
 
 Module :
 ```python
-from SimpleHeader import create_header
+from simpleheader import create_header
 
 def main():
     create_header(text="Example text", borderwidth=3, btype="#", space=1)
