@@ -1,22 +1,30 @@
 import argparse
+import math
 from argparse import Namespace
 
-def create_header(text="Example text", borderwidth=2, btype="#"):
+# to-do add space between text and border
+
+def create_header(text="Example text", borderwidth=2, btype="#", space=1):
     """
     Create a header with a specified character, border width, and text.
-
-    ##################
-    ## Example text ##
-    ##################
     
     :param text: The text to include in the header.
     :param borderwidth: The width of the border characters.
     :param btype: The character to use for the header border.
+    :param space: The space between text and border.
     """
-    # Calculate the width for the top and bottom border
-    width = len(text) + 2 * borderwidth + 2  # Include spaces on both sides of the text
+
+    x = math.ceil(len(text) / len(btype),)
+    y = len(btype) * x
+    u = abs(len(text) - y)
+
+    text_space = (" "*u) + ((len(btype)*" ")*space)
+
+    center_text = f"{btype * borderwidth}{(len(btype)*" ")*space}{text}{text_space}{btype * borderwidth}"
+    width = len(center_text)
+    border_text = btype * int((width/len(btype)))
 
     # Show the result
-    print(btype * width)
-    print(f"{btype * borderwidth} {text} {btype * borderwidth}")
-    print(btype * width)
+    print(border_text)
+    print(center_text)
+    print(border_text)

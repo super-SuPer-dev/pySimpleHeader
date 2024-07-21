@@ -3,20 +3,19 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "SimpleHeader"
-version = "0.1.0"
+name = "pySimpleHeader"
+version = "0.1.2"
 description = "A brief description of your project."
 authors = [
-    { name = "Your Name", email = "your.email@example.com" }
+    { name = "super-SuPer-dev"}
 ]
 license = { text = "MIT" }
 
 [project.urls]
-homepage = "https://github.com/yourusername/project_name"
+homepage = "https://github.com/super-SuPer-dev/pySimpleHeader"
 
 [tool.setuptools]
 package-dir = {"" = "."}
-# packages = ["AHH"]
 
 [tool.setuptools.packages.find]
 where = ["."]
