@@ -18,9 +18,10 @@ def create_header(text="Example text", borderwidth=2, btype="#", space=1):
     y = len(btype) * x
     u = abs(len(text) - y)
 
-    text_space = (" "*u) + ((len(btype)*" ")*space)
+    text_space_s = (" "*u) + ((len(btype)*" ")*space)
+    text_space_f = (len(btype)*" ")*space
 
-    center_text = f"{btype * borderwidth}{(len(btype)*" ")*space}{text}{text_space}{btype * borderwidth}"
+    center_text = f"{btype * borderwidth}{text_space_f}{text}{text_space_s}{btype * borderwidth}"
     width = len(center_text)
     border_text = btype * int((width/len(btype)))
 
