@@ -22,3 +22,6 @@ where = ["."]
 
 [project.optional-dependencies]
 test = ["unittest"]
+
+[project.scripts]
+simpleheader = "simpleheader.__main__:main"
