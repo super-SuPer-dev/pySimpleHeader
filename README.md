@@ -22,7 +22,7 @@ $$$$$$$$$$$$$$$$$$$$$$  @@@@@@@@@@@@@@@@@@@@@@  ₪₪₪₪₪₪₪₪₪₪�
 
 ## Install
 ```bash
-pip install https://github.com/super-SuPer-dev/pySimpleHeader.git
+pip install git+https://github.com/super-SuPer-dev/pySimpleHeader.git
 ```
 
 ## Usage
